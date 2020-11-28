@@ -6,13 +6,16 @@ export function getTopBanner() {
   })
 }
 
-export function getHotRecommend() {
+export function getHotRecommends() {
   return request({
-    url: "/personalized"
+    url: "/personalized",
+    params:{
+      limit:8
+    }
   })
 }
 
-export function getNewAlbum(limit, offset) {
+export function getNewAlbums(limit, offset) {
   return request({
     url: "/top/album",
     params: {

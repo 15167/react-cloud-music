@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-
+import sprite_footer_02 from '@/assets/img/sprite_footer_02.png';
+import sprite_footer_01 from '@/assets/img/sprite_footer_01.png';
 export const AppFooterWrapper = styled.div`
   height: 172px;
   background-color: #f2f2f2;
@@ -50,7 +51,7 @@ export const FooterRight = styled.ul`
       width: 50px;
       height: 45px;
 
-      background-image: url(${require("@/assets/img/sprite_footer_02.png")});
+      background-image: url(${(sprite_footer_02)});
       background-size: 110px 450px;
     }
 
@@ -72,7 +73,7 @@ export const FooterRight = styled.ul`
       display: block;
       width: 52px;
       height: 10px;
-      background-image: url(${require("@/assets/img/sprite_footer_01.png")});
+      background-image: url(${(sprite_footer_01)});
       background-size: 180px 100px;
     }
 
