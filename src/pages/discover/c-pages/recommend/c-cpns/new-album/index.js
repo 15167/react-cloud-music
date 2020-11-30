@@ -7,7 +7,7 @@ import { getNewAlbumAction } from '../../store/actionCreators';
 import {
     AlbumWrapper
 } from './style'
-export default memo(function HYNewAlbum() {
+export default memo(function HYNewAlbum(props) {
     
     //redux hooks
     const {newAlbums} = useSelector(state =>({
@@ -35,7 +35,7 @@ export default memo(function HYNewAlbum() {
                                  {
                                      newAlbums.slice(item*5,(item+1)*5).map(iten => {
                                         return <HYAlbumCover 
-                                        key={item.id} 
+                                        key={iten.id} 
                                         info={iten} 
                                         size={100} 
                                         width={118}
